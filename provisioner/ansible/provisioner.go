@@ -52,7 +52,7 @@ type Config struct {
 	SSHHostKeyFile       string   `mapstructure:"ssh_host_key_file"`
 	SSHAuthorizedKeyFile string   `mapstructure:"ssh_authorized_key_file"`
 	SFTPCmd              string   `mapstructure:"sftp_command"`
-	inventoryFile        string
+	inventoryFile        string   `mapstructure:"inventory_file"`
 }
 
 type Provisioner struct {
