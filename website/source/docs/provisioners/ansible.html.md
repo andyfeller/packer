@@ -47,6 +47,11 @@ Required Parameters:
 
 Optional Parameters:
 
+- `inventory_file` (string) - INI-like formatted inventory file containing
+  hosts and groups.  When unspecified, a temporary dynamic inventory file
+  is generated based upon various other parameters (e.g. `groups`,
+  `empty_groups`, `host_alias`, `local_port`, `user`, etc).
+
 - `groups` (array of strings) - The groups into which the Ansible host
   should be placed. When unspecified, the host is not associated with any
   groups.
